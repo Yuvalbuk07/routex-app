@@ -12,7 +12,6 @@ RouteX היא אפליקציית מובייל המאפשרת למשתמשים ל
 ## טכנולוגיות
 
 - React Native
-- Expo
 - React Navigation
 - AsyncStorage
 
