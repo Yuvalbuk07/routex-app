@@ -14,8 +14,13 @@ import TravellerTypeScreen from './screens/TravellerTypeScreen';
 import TripInfoScreen from './screens/TripInfoScreen';
 import HomeScreen from './screens/HomeScreen';
 
+// יצירת מחסנית ניווט
 const Stack = createStackNavigator();
 
+/**
+ * קומפוננטת הניווט הראשית של האפליקציה
+ * מגדירה את כל המסכים והמעברים ביניהם
+ */
 const AppNavigation = () => {
     return (
         <NavigationContainer>
@@ -23,6 +28,7 @@ const AppNavigation = () => {
                 initialRouteName="Splash"
                 screenOptions={{
                     headerShown: false, // להסתיר כותרת בכל המסכים
+                    cardStyle: { backgroundColor: '#FFFFFF' } // רקע לבן בכל המסכים
                 }}
             >
                 <Stack.Screen name="Splash" component={SplashScreen} />
