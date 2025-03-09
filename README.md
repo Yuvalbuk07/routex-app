@@ -11,7 +11,7 @@ RouteX היא אפליקציית מובייל המאפשרת למשתמשים ל
 
 ## טכנולוגיות
 
-- React Native
+- React Native CLI
 - React Navigation
 - AsyncStorage
 
@@ -21,7 +21,9 @@ RouteX היא אפליקציית מובייל המאפשרת למשתמשים ל
 
 - Node.js
 - npm או yarn
-- Expo CLI
+- React Native CLI
+- Android Studio (לפיתוח אנדרואיד)
+- Xcode (לפיתוח iOS, דורש macOS)
 
 ### התקנה
 
@@ -29,16 +31,27 @@ RouteX היא אפליקציית מובייל המאפשרת למשתמשים ל
 # התקנת תלויות
 npm install
 
+# אם אתה משתמש ב-iOS (דורש macOS)
+cd ios && pod install && cd ..
+
 # הרצת האפליקציה
-npm start
+# אנדרואיד
+npx react-native run-android
+
+# iOS
+npx react-native run-ios
 ```
+
+לפרטים נוספים על ההתקנה והרצה, ראה את [קובץ ההוראות המפורטות](SETUP.md).
 
 ## מבנה הפרויקט
 
+- `/android` - קוד ספציפי לאנדרואיד
+- `/ios` - קוד ספציפי ל-iOS
 - `/screens` - מסכי האפליקציה
 - `/services` - שירותים ולוגיקה עסקית
 - `/styles` - סגנונות וערכות נושא
-- `/assets` - תמונות וקבצי מדיה
+- `/assets` - תמונות וקבצי מדיה (יש ליצור)
 
 ## רישיון
 
