@@ -1,6 +1,10 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { enableScreens } from 'react-native-screens';
+
+// אפשור מסכים להתמודדות טובה יותר עם ניווט
+enableScreens();
 
 // ייבוא מסכים
 import SplashScreen from './screens/SplashScreen';
